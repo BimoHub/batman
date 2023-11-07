@@ -12,12 +12,10 @@
 
 body{
     background-image: url(assets/BATMANbyBIMO.png);
-    background-size: cover;
+    background-size:cover;
     color:#ffff12;
-
-    min-width: 1600px;
-    min-height: 800px;
     overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 footer{
@@ -28,13 +26,13 @@ footer{
 
 footer,
 footer>a {
-    font-size: 5rem;
+    font-size: 2rem;
     color: #ffff12;
 }
 
 .logoAndDescription{
-    margin-top: 3%;
-    margin-left: 1.5%;
+    margin-top: 5%;
+    margin-left: 2%;
     height: 50%;
     display: flex;
     flex: 1 2;
@@ -43,31 +41,32 @@ footer>a {
 
 .description {
     position: absolute;
-    font-size: 3.25rem;
+    font-size: 0.8rem;
 }
 
-.logoAndDescription h1{
+.logoAndDescription h1 {
     font-family: 'Saridona';
-    font-size: 50rem;
-    text-shadow:  10px 100px 20px rgba(255, 255, 18, 0.5);
+    font-size: 12rem;
+    text-shadow: 0.5rem 2.5rem 0.75rem rgba(255, 255, 18, 0.5);
     position: relative;
-    left:45%;
-
-    margin-top: 15px;
-    margin-bottom: 7.5%;
+    left: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .batman {
+    position: absolute;
+    left: 55%;
+    top: 7%;
     display: flex;
+    width: 25%;
+    justify-content: center;
     flex-direction: row-reverse;
-
-    gap: 28rem;
-    margin-right: 9%;
+    transform: scale(0.25);
 }
 
 .batman>img {
-    border: 2px solid #ffff12; 
-    scale: 1.5;
+    border: 5px solid #ffff12; 
 }
 
 /* batman logo text, kinda like emoji */
@@ -84,5 +83,6 @@ b{
     width:10%;
     border:none;
     position:absolute;
+    left: 1%;
     bottom:0;
 }
