@@ -13,66 +13,61 @@
 body{
     background-image: url(assets/BATMANbyBIMO.png);
     background-size: cover;
-    background-repeat: none;
     color:#ffff12;
-}
 
-h1{
-    float:right;
-    font-family: 'Saridona';
-    font-size: 245px;
-    /* adjusting margins so it does not get in the way of other elements */
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    text-shadow: 0 70px 20px rgba(255, 255, 18, 0.5); /*horizontal, vertical, blur*/
-    /* a in rgba is for alpha transparency */
-}
-
-img{
-    width:18%;
-    margin-top: 150px;
-    margin-left: 82%;
-    border: 2px solid #ffdd64;
-}
-
-/* using id (which has higher specifity than class */
-#logo{
-    width:33.15%;
-    /* border:none; */
-    margin-top: -290px;
-
-    position: absolute;
-    margin-left: 49%;
-}
-
-#bimologo{
-    width:10%;
-
-    border:none;
-    position:absolute;
-    bottom:0;
-    left:-20px;
-    margin-top:0;
-    margin-left: 0;
+    min-width: 1600px;
+    min-height: 800px;
+    overflow: hidden;
 }
 
 footer{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5%;
+    right: 9%;
 }
 
-article{
+footer,
+footer>a {
+    font-size: 5rem;
+    color: #ffff12;
+}
+
+.logoAndDescription{
+    margin-top: 3%;
+    margin-left: 1.5%;
+    height: 50%;
+    display: flex;
+    flex: 1 2;
+    gap: 50%;
+}
+
+.description {
     position: absolute;
-    left:0;
-    top:0;
+    font-size: 3.25rem;
 }
 
-.belowItem{
-    margin-top: 100px;
-    display: inline-block;
+.logoAndDescription h1{
+    font-family: 'Saridona';
+    font-size: 50rem;
+    text-shadow:  10px 100px 20px rgba(255, 255, 18, 0.5);
+    position: relative;
+    left:45%;
+
+    margin-top: 15px;
+    margin-bottom: 7.5%;
+}
+
+.batman {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 28rem;
+    margin-right: 9%;
+}
+
+.batman>img {
+    border: 2px solid #ffff12; 
+    scale: 1.5;
 }
 
 /* batman logo text, kinda like emoji */
@@ -83,4 +78,11 @@ article{
 /* bold text */
 b{
     font-size: larger;
+}
+
+.bimologo{
+    width:10%;
+    border:none;
+    position:absolute;
+    bottom:0;
 }
