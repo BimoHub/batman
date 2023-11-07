@@ -1,0 +1,86 @@
+/* font for heaading */
+@font-face {
+    font-family: 'Saridona';
+    src: url('assets/Saridona.ttf') format('truetype'); 
+}
+
+/* font for batman symbol, used in footer + beginning and end of paragraph */
+@font-face {
+    font-family: 'batman';
+    src: url('assets/batman.ttf') format('truetype'); 
+}
+
+body{
+    background-image: url(assets/BATMANbyBIMO.png);
+    background-size: cover;
+    background-repeat: none;
+    color:#ffff12;
+}
+
+h1{
+    float:right;
+    font-family: 'Saridona';
+    font-size: 245px;
+    /* adjusting margins so it does not get in the way of other elements */
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-shadow: 0 70px 20px rgba(255, 255, 18, 0.5); /*horizontal, vertical, blur*/
+    /* a in rgba is for alpha transparency */
+}
+
+img{
+    width:18%;
+    margin-top: 150px;
+    margin-left: 82%;
+    border: 2px solid #ffdd64;
+}
+
+/* using id (which has higher specifity than class */
+#logo{
+    width:33.15%;
+    /* border:none; */
+    margin-top: -290px;
+
+    position: absolute;
+    margin-left: 49%;
+}
+
+#bimologo{
+    width:10%;
+
+    border:none;
+    position:absolute;
+    bottom:0;
+    left:-20px;
+    margin-top:0;
+    margin-left: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+article{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.belowItem{
+    margin-top: 100px;
+    display: inline-block;
+}
+
+/* batman logo text, kinda like emoji */
+.symbol{
+    font-family: 'batman';
+}
+
+/* bold text */
+b{
+    font-size: larger;
+}
